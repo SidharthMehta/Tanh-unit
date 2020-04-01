@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ECE564MyDesign
+Version: P-2019.03-SP1
+Date   : Fri Nov 22 18:24:23 2019
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: U2/U3/ai_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dut__sram__write_data[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  U2/U3/ai_reg[6]/CK (DFF_X2)            0.0000     0.0000 r
+  U2/U3/ai_reg[6]/QN (DFF_X2)            0.3075     0.3075 f
+  U252/ZN (AND3_X4)                      0.3217     0.6291 f
+  U260/ZN (NAND3_X2)                     0.1168     0.7459 r
+  U253/ZN (NOR2_X2)                      0.0776     0.8235 f
+  U277/ZN (AND2_X4)                      0.2481     1.0716 f
+  U308/ZN (XNOR2_X1)                     0.2433     1.3149 f
+  U458/Z (MUX2_X2)                       0.5049     1.8198 f
+  U246/ZN (AND2_X4)                      0.2669     2.0867 f
+  U225/ZN (NAND3_X2)                     0.0903     2.1770 r
+  U254/ZN (OR2_X4)                       0.1435     2.3205 r
+  U282/ZN (NOR2_X2)                      0.0357     2.3562 f
+  U280/ZN (NOR2_X2)                      0.1103     2.4665 r
+  U278/ZN (INV_X2)                       0.0631     2.5296 f
+  U262/ZN (INV_X4)                       0.0765     2.6061 r
+  U224/ZN (NAND2_X4)                     0.0980     2.7041 f
+  U501/ZN (OAI221_X2)                    0.9587     3.6628 r
+  dut__sram__write_data[1] (out)         0.0000     3.6628 r
+  data arrival time                                 3.6628
+
+  clock clk (rise edge)                  4.2800     4.2800
+  clock network delay (ideal)            0.0000     4.2800
+  clock uncertainty                     -0.0500     4.2300
+  output external delay                 -0.5660     3.6640
+  data required time                                3.6640
+  -----------------------------------------------------------
+  data required time                                3.6640
+  data arrival time                                -3.6628
+  -----------------------------------------------------------
+  slack (MET)                                       0.0012
+
+
+1

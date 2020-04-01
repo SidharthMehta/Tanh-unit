@@ -1,0 +1,4 @@
+area = 3159.0160
+Number of cycles = 4108
+clock period = 4.28
+performance = 55,542,577.47584
