@@ -1,4 +1,4 @@
-# Tanh-unit
+# Tanh Unit for LSTM cell
 
 The project implements a g(t) gate within an LSTM cell. LSTM stands for Long Short Term Memory and is a type of neural network. 
 ![Screenshot](/Images/1.png? "LSTM")
