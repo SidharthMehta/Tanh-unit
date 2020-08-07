@@ -12,3 +12,5 @@ g(t) gate is a tanh function performed on the weighted sum of inputs. Weighted s
 g(t) gate finds its output using interpolation on weighted sum with help of a lookup table. 
 
 The aim of this project was to design g(t) gate while achieving minimal area-delay product.
+
+[Veiw project report](https://github.com/SidharthMehta/Tanh-unit/blob/master/report/Project%20report.pdf)
